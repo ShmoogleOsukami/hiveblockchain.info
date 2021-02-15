@@ -1,0 +1,419 @@
+html{
+    scroll-behavior: smooth; /*Added to html for chrome and opera */
+}
+body {
+    width: 100%;
+    overflow-x: hidden;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: #1A2632;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+.grc-bgcolor{
+    background-color: #1A2632;
+}
+
+.anchor-adjust{
+    position: relative;
+    margin-top: -76px;
+    padding-top: 76px;
+/* adjusts any anchors to match with the banner. Similar to the one done with .doc-container h1-h6*/
+}
+
+.grcbtn {
+    border-radius: 50rem;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    margin: .25rem !important;
+    background-color: #360166;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.grcbtn:hover,.grcbtn:focus,.grcbtn:active,
+.grcbtn.active, .grcbtn:focus:active, .grcbtn:hover:active,
+.grcbtn.active:focus, .grcbtn.active:hover, .open > .grcbtn.dropdown-toggle,
+.open > .grcbtn.dropdown-toggle:focus, .open > .grcbtn.dropdown-toggle:hover {
+    background-color: #9013FE;
+    color: white;
+}
+.grcbtn:focus, .grcbtn.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.35);
+}
+.nav-link.grcbtn {
+    font-size: 0.8rem;
+}
+.navbar-toggler-icon {
+    font-size: 1rem !important;
+}
+.dropdown-header {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: lightgray;
+}
+/* Fixes an issue with scrolling while having a Fixed-top collapsed navbar open.*/
+.nav-item .dropdown-menu {
+    max-height: 50vh;
+    overflow-y: auto;   
+}
+@media (min-width: 992px) {
+    .nav-item .dropdown-menu {
+        max-height: 85vh;
+    }
+}
+/*work around to get check marks & other special chars to render as white text*/
+.text-special-color-white{
+    color:transparent;
+    text-shadow: 0 0 0 white;
+}
+/*End Fix*/
+dfn{
+    text-decoration: 1px dotted underline;
+    cursor: help;
+    font-style: normal;
+}
+.grclogoimg {
+    width: 200px;
+    padding-top: 50px;
+}
+.grclogoimg-pt25 {
+    width: 200px;
+    padding-top: 25px;
+}
+.grclink a {
+    color: #3f9bff;
+}
+.text-bold {
+    font-weight: bold;
+}
+/*_Header.erb*/
+.navbar {
+    background-color: #7E11dE /*#9013FE is too light, #360166 is too dark, so we go in between-ish*/
+}
+/*----End _header.erb----*/
+
+/*_Footer.erb*/
+.gridcoin-footer {
+    padding-top: 35px;
+    padding-bottom: 15px;
+    background-image:linear-gradient(#360166,#9013FE);
+}
+.gridcoin-footer a {
+    color: white;
+}
+.gridcoin-footer h6 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.gridcoin-footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+/*----End _footer.erb----*/
+
+/*Acqure-details.erb*/
+.acquire-details {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.acquire-details > div div:nth-child(2) ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.acquire-details > div div:nth-child(2) li {
+    padding-bottom: 15px;
+}
+/*----End Acquire-Details.erb----*/
+
+/*Aquire.erb*/
+.acquire-grc {
+    background-color: #1A2632;
+}
+.acquire-grc div>ul {
+    list-style-type: none;
+}
+.acquire-grc ul>li{
+	padding-top: 10px;
+}
+.acquire-grc li {
+    padding-bottom: 10px;
+}
+/*----End Aquire.erb----*/
+
+/*index.htm*/
+.intro {
+    margin-top: -20px;
+    padding-top: 150px;
+    padding-bottom: 25px;
+    background-image:linear-gradient(#9013FE,#360166);
+}
+/*----End index.htm----*/
+
+/*Blog.htm*/
+.blog {
+    padding-bottom: 15px;
+    padding-top: 130px;
+}
+.blog img{
+    width: 200px;
+}
+.blog > div > div div:last-of-type {
+    margin-bottom: 5px;
+}
+.blog > div > div div:last-of-type p{
+    margin-bottom: 10px;
+}
+.blog-content {
+    padding-bottom: 50px;
+}
+/*----End Blog.htm----*/
+
+/*Contact.htm*/
+.contact {
+    padding-bottom: 20px;
+    padding-top: 140px;
+}
+.contact .row div:nth-child(1) {
+    padding-top: 5vh; 
+}
+.contact .row div:nth-child(3) {
+    padding-top: 30px; 
+}
+/*----End Contact.htm----*/
+
+/*Boinc_1a.erb*/
+.boinc-a {
+    padding-top: 0px;
+    padding-bottom: 15px;
+}
+.boinc-a .container div:nth-child(2) {
+    margin-bottom: 25px;
+    padding-top: 10px;
+}
+.boinc-a .container div:nth-child(3) {
+    margin-top: 10px;
+}
+/*----End boinc_1a.erb----*/
+
+/*Boinc_1b.erb*/
+.boinc-b {
+    padding-top: 0px;
+    padding-bottom: 15px;
+}
+.boinc-b .container div:nth-child(2) {
+    margin-top: 10px;
+}
+.boinc-b .container div:nth-child(2) div>ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.boinc-b .container div:nth-child(2) li {
+    text-align: left;
+    margin-bottom: 10px;
+}
+/*----End boinc_1b.erb----*/
+
+/*Boinc_1c.erb*/
+.boinc-c {
+    padding-top: 0px;
+    padding-bottom: 15px;
+}
+/*----End boinc_1c.erb----*/
+/*Gridcoin-install.erb*/
+.grc-inst-sec-2 .row {
+    padding-top: 30px;
+}
+/*----End gridcoin instal.erb----*/
+/*whitelist.erb*/
+.whitelist {
+    padding-top: 140px;
+    padding-bottom: 5px;
+}
+.whitelist h5 {
+    font-weight: bold;
+}
+.whitelist-2 {
+    background-color: #1A2632;
+    padding-bottom: 40px;
+}
+.whitelist-2 a {
+    font-weight: bold;
+}
+.table-color-yes{
+    background-color: green;
+}
+.table-color-no{
+    background-color: darkred;
+}
+.table-color-gdpr-yes{ /* warns that you need to enable stats */
+    background-color: #999900;
+}
+.table-color-gdpr-yes a{ /* makes the link underlined and not a hard to read blue*/
+    color: inherit;
+    text-decoration: underline;
+}
+
+/*----end whitelist.erb----*/
+/*terminology.htm*/
+.terminology-top {
+    padding-top: 140px;
+}
+.terminology-content {
+    padding-top: 10px;
+}
+.terminology-top .row > div {
+    width: 100%
+}
+/*end terminology.htm*/
+/*security.erb*/
+.security {
+    padding-top: 140px;
+}
+/*end security.erb*/
+/*Guide pages*/
+.guide-menu-top{
+    padding-top: 120px;
+}
+.guide-menu-top .row {
+    text-align: center;
+}
+.guide-menu-top .row div {
+    padding-bottom: 10px;
+    border: 2px dotted white;
+}
+.guide-menu-top h5 {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.guide-menu-top hr {
+    border-color: white;
+}
+.guide-menu-bot {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.guide-menu-bot .row {
+    text-align: center;
+}
+.guide-menu-bot .row div {
+    padding-bottom: 10px;
+    border: 2px dotted white;
+}
+.guide-menu-bot h5 {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.guide-menu-bot hr {
+    border-color: white;
+}
+
+/*Earn-GRC.htm*/
+.earnGRC {
+    padding-bottom: 25px;
+}
+.earnGRC div>ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.earnGRC li {
+    padding-top: 10px;
+}
+/*----End Earn-GRC.htm----*/
+
+/*noncruncherEarn-GRC.htm*/
+.noncruncher-earnGRC div>ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.noncruncher-earnGRC li {
+    padding-top: 10px;
+}
+/*----End noncruncherEarn-GRC.htm----*/
+
+/*noncruncher-GRC-setup.htm*/
+.noncruncher-grc-setup {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+/*----End noncruncher-grc-setup.htm----*/
+
+.grc-misc {
+    padding-top: 140px;
+}.grc-misc-content {
+    padding-bottom: 15px;
+}
+.grc-ref {
+    padding-top: 140px;
+}
+.min-h-80{
+    min-height: 80vh;
+}
+.highlight { 
+    /* applies to markdown rendering on four space indented code block  */
+    background-color: #454d55;
+    color: white;
+    padding-left: 2px;
+}
+/* wiki */
+  .docs-container{
+    padding-top: 130px;
+    text-align:left;
+  }
+  .docs-container table{
+    border-collapse: collapse;
+    border:2px solid #ffffff;
+ }
+
+ .docs-container th{
+    border:2px solid #ffffff;
+    padding: 10px;
+ }
+
+ .docs-container td{
+    border:1px solid #ffffff;
+    text-align: center;
+ }
+
+ .docs-container li{
+    line-height: 1.5em;
+ }
+
+ .docs-container code{
+    white-space:pre;
+ }
+
+ .docs-menu{
+     width: 270px;
+     margin: 0px auto 16px auto;
+     /* 16px gives spacing on the bottom on mobile when collapsed*/
+ }
+ .docs-container h1, .docs-container h2, .docs-container h3, .docs-container h4, .docs-container h5, .docs-container h6{
+    position: relative;
+    margin-top: -76px;
+    padding-top: 76px;
+    z-index: -1;
+    /*This adjusts the anchors to account for the navbar and have the dropdown work properly on mobile  
+(doesn't change anything visually except where you scroll to on link#anchor)*/
+ }
+ .docs-container hr{
+    border-top: 1px solid #fff
+ } 
+ .docs-container a{
+     color: #3f9bff;
+ }
+.docs-container blockquote {
+    border-left: 3px solid grey;
+    padding-left: 20px;
+}
+.docs-container li >  p + ul { /* Decrease larger <p> spacing from a bullet point to its sub bullet points */
+    margin-top: -1.0em; /* negative margins used instead of selecting the <p> element because that's really tricky or potentially impossible*/
+}
